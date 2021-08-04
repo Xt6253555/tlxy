@@ -16,7 +16,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<String> {
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     //表示 channel 处于就绪状态, 提示上线
-    @Override
+
     public void channelActive(ChannelHandlerContext ctx) {
         Channel channel = ctx.channel();
         //将该客户加入聊天的信息推送给其它在线的客户端
